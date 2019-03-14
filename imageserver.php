@@ -25,13 +25,15 @@ if(isset($_POST["submit"])){
         }
         
         $dataTime = date("Y-m-d H:i:s");
+        $des=$_POST['des'];
+        $titlee=$_POST['titlee'];
        
 
         //Insert image content into database
-        $insert = $db->query("INSERT into images (image,created) VALUES ('$imgContent', '$dataTime')");
+        $insert = $db->query("INSERT into images (image,created,title,des) VALUES ('$imgContent', '$dataTime','$titlee','$des')");
         if($insert){
-            echo "Image uploaded successfully.";
-            header('location: gallery.php');
+            echo 'Success';
+            
         }else{
              echo "File upload failed, please try again.";
         } 
