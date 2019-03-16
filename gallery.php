@@ -95,8 +95,8 @@
 					<div class="banner_content text-center">
 						<h2>Image Gallery</h2>
 						<div class="page_link">
-							<a href="#">Home</a>
-							<a href="gallery.html">Gallery</a>
+							<a href="index.php">Home</a>
+							<a href="gallery.php">Gallery</a>
 						</div>
 					</div>
 				</div>
